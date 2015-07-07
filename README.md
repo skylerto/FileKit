@@ -32,7 +32,7 @@ file.write()
 ### CLI
 Best to use [Carthage](https://github.com/Carthage/Carthage), just place this in your Cartfile
 ```
-github 'skylerto/FileKit'
+github "skylerto/FileKit" ~> 0.1.1
 ```
 
 ### To Dos
