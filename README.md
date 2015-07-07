@@ -5,7 +5,7 @@ A lightweight file utility for scaffolding file content before writting it out t
 
 ``` swift
 // initialization
-let file = FileKit(filename:"test.txt", content: "This is a test")
+let file = FileKit(filename: "test.txt", content: "This is a test")
 
 // check if the file exists
 file.exists()
