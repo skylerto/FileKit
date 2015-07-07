@@ -1,4 +1,6 @@
 # FileKit -- A Lightweight File Utility
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)  
+
 A lightweight file utility for scaffolding file content before writting it out to files, in pure swift.
 
 ## Usage
