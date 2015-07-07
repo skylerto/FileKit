@@ -22,6 +22,12 @@ file.write()
 
 ## Installation
 
+### xcode way
+1. git clone https://github.com/skylerto/FileKit/ 
+2. Open in xcode and build the project
+3. Copy FileKit.framework into your projects Build Phase
+
+### CLI
 Best to use [Carthage](https://github.com/Carthage/Carthage), just place this in your Cartfile
 ```
 github 'skylerto/FileKit'
