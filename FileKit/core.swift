@@ -12,7 +12,7 @@ public class FileKit {
     private var c: String?
     
     // Constructor
-    init(filename: String, content: String){
+    public init(filename: String, content: String){
         self.f = filename
         self.c = content
     }
