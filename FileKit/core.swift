@@ -46,7 +46,7 @@ public class FileKit {
     }
     
     /*  Determine if the file exists    */
-    func exists() -> Bool {
+    public func exists() -> Bool {
         return NSFileManager().fileExistsAtPath(self.filename())
     }
     
