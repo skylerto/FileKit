@@ -10,6 +10,7 @@
 		BF168BAE1B4C29DA00EFA303 /* FileKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF168BAD1B4C29DA00EFA303 /* FileKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF168BB41B4C29DA00EFA303 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF168BA81B4C29DA00EFA303 /* FileKit.framework */; };
 		BF168BBB1B4C29DA00EFA303 /* FileKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF168BBA1B4C29DA00EFA303 /* FileKitTests.swift */; };
+		BF168BC71B4C2B2E00EFA303 /* core.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF168BC61B4C2B2E00EFA303 /* core.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BF168BB31B4C29DA00EFA303 /* FileKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF168BB91B4C29DA00EFA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF168BBA1B4C29DA00EFA303 /* FileKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileKitTests.swift; sourceTree = "<group>"; };
+		BF168BC61B4C2B2E00EFA303 /* core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = core.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BF168BAD1B4C29DA00EFA303 /* FileKit.h */,
 				BF168BAB1B4C29DA00EFA303 /* Supporting Files */,
+				BF168BC61B4C2B2E00EFA303 /* core.swift */,
 			);
 			path = FileKit;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF168BC71B4C2B2E00EFA303 /* core.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 		BF168BBF1B4C29DA00EFA303 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -329,12 +334,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BF168BC01B4C29DA00EFA303 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
